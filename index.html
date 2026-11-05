@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff7f5" />
+  <meta name="description" content="You're invited to celebrate Nimra's birthday! View the event details and RSVP." />
+  <title>Nimra's Birthday | You're Invited!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Nimra's Birthday home"><span class="crown">♛</span><span>Nimra's Birthday</span><b>♥</b></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#details">Event Details</a><a href="#rsvp">RSVP</a>
+      <a class="nav-cta" href="#rsvp">♥ &nbsp; RSVP Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" role="img" aria-label="Pink birthday cake, balloons, flowers and presents"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">♥ &nbsp; YOU'RE INVITED TO &nbsp; ♥</p>
+        <div class="tiny-crown">♕</div>
+        <h1>Nimra's</h1>
+        <h2>Birthday Party <span>♡</span></h2>
+        <p class="intro">Join us for a day filled with love, laughter,<br class="desktop-only"> delicious treats and unforgettable memories<br class="desktop-only"> as we celebrate my special day!</p>
+        <a class="date-pill" href="#details">▦ &nbsp; SATURDAY, OCTOBER 24, 2026</a>
+      </div>
+    </section>
+
+    <section class="countdown-wrap" aria-label="Countdown to the celebration">
+      <h2 class="script-heading"><span>— ♥</span> Countdown to the Celebration <span>♥ —</span></h2>
+      <div class="countdown" id="countdown">
+        <div class="time-unit"><div class="time-circle pink"><span id="days">--</span></div><small>Days</small></div>
+        <div class="time-unit"><div class="time-circle yellow"><span id="hours">--</span></div><small>Hours</small></div>
+        <div class="time-unit"><div class="time-circle purple"><span id="minutes">--</span></div><small>Minutes</small></div>
+        <div class="time-unit"><div class="time-circle green"><span id="seconds">--</span></div><small>Seconds</small></div>
+      </div>
+      <span class="doodle doodle-left">♡</span><span class="doodle doodle-right">♡</span>
+    </section>
+
+    <section class="details-layout" id="details">
+      <article class="event-card" id="about">
+        <h2 class="section-script">Event Details <span>♥</span></h2>
+        <div class="underline"></div>
+        <div class="detail-row"><span class="detail-icon">▦</span><div><strong>Date</strong><p>Saturday, October 24, 2026</p></div></div>
+        <div class="detail-row"><span class="detail-icon">◷</span><div><strong>Time</strong><p>4:00 PM – 10:00 PM</p></div></div>
+        <div class="detail-row"><span class="detail-icon">⌖</span><div><strong>Venue</strong><p>The Grand Palm Resort<br>123 Celebration Lane<br>Austin, TX 78701</p></div></div>
+        <p class="handwritten-note">Your presence will make<br>my day even more special! <span>♥</span></p>
+        <span class="flower-decoration" aria-hidden="true">✿</span>
+      </article>
+
+      <figure class="polaroid">
+        <span class="tape"></span>
+        <img src="assets/birthday-girl.jpg" alt="Birthday girl celebrating with a pink birthday cake and candles" />
+        <figcaption>It's my birthday! <span>♥</span></figcaption>
+      </figure>
+
+      <section class="rsvp-card" id="rsvp">
+        <h2 class="section-script">RSVP <span>♥ —</span></h2>
+        <p class="rsvp-subtitle">Let me know if you can make it!</p>
+        <form id="rsvp-form">
+          <label for="name">Your Name <em>*</em></label>
+          <input id="name" name="name" autocomplete="name" placeholder="Enter your name" required>
+          <label for="email">Email Address <em>*</em></label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email" required>
+          <div class="form-row">
+            <fieldset>
+              <legend>Will you attend? <em>*</em></legend>
+              <label class="radio-label"><input type="radio" name="attendance" value="Yes, I'll be there!" checked> Yes, I'll be there!</label>
+              <label class="radio-label"><input type="radio" name="attendance" value="Maybe, I'll try"> Maybe, I'll try</label>
+              <label class="radio-label"><input type="radio" name="attendance" value="Sorry, can't make it"> Sorry, can't make it</label>
+            </fieldset>
+            <div class="guest-field"><label for="guests">How many guests? <em>*</em></label><select id="guests" name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+          </div>
+          <label for="message">Special Message (optional)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Write a message..."></textarea>
+          <button class="submit-btn" type="submit">✉ &nbsp; Send RSVP</button>
+          <p class="form-note" id="form-note" aria-live="polite">Your email app will open with your RSVP details ready to send.</p>
+        </form>
+      </section>
+    </section>
+
+    <section class="expect-section">
+      <h2 class="script-heading"><span>— ♥</span> What to Expect <span>♥ —</span></h2>
+      <div class="expect-grid">
+        <div class="expect-item"><span class="expect-icon pink">♜</span><strong>Delicious Food<br>&amp; Drinks</strong></div>
+        <div class="expect-item"><span class="expect-icon purple">♫</span><strong>Music<br>&amp; Dancing</strong></div>
+        <div class="expect-item"><span class="expect-icon yellow">♧</span><strong>Fun<br>Games</strong></div>
+        <div class="expect-item"><span class="expect-icon green">◎</span><strong>Photo<br>Booth</strong></div>
+        <div class="expect-item"><span class="expect-icon purple">♕</span><strong>Birthday<br>Cake</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-brand" href="#home">♕ &nbsp; Nimra's Birthday</a>
+    <p>♥ &nbsp; Life is sweeter with friends! &nbsp; ♥</p>
+    <div class="socials" aria-label="Social links"><a href="#rsvp" aria-label="Instagram">◎</a><a href="#rsvp" aria-label="Facebook">f</a><a href="#rsvp" aria-label="TikTok">♪</a><a href="#rsvp" aria-label="Pinterest">p</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
