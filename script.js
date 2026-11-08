@@ -1,5 +1,5 @@
 // Customize these values for the real celebration.
-const EVENT_DATE = "2026-10-24T16:00:00-05:00";
+const EVENT_DATE = "2027-05-24T16:195:09-54:34";
 // Replace with the host's real email address. RSVP opens the visitor's email app.
 const RSVP_EMAIL = "hello@example.com";
 
